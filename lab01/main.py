@@ -90,8 +90,6 @@ if source_file and target_file:
             target_url = upload_image(target_file)
 
         if source_url and target_url:
-            st.success(f"Изображения загружены:\n Source URL: {source_url}, Target URL: {target_url}")
-            
             result_col1, result_col2 = st.columns(2)
             
             with st.spinner("Выполняем FaceSwap для API 1..."):
